@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FC8348662DB7547B0079D21A /* Flow in Frameworks */ = {isa = PBXBuildFile; productRef = FC8348652DB7547B0079D21A /* Flow */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FC8348382DB72F960079D21A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8348662DB7547B0079D21A /* Flow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = ybjj;
 			packageProductDependencies = (
+				FC8348652DB7547B0079D21A /* Flow */,
 			);
 			productName = ybjj;
 			productReference = FC8348252DB72F940079D21A /* ybjj.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = FC83481C2DB72F940079D21A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FC8348642DB7547B0079D21A /* XCRemoteSwiftPackageReference "SwiftUI-Flow" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC8348262DB72F940079D21A /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC8348642DB7547B0079D21A /* XCRemoteSwiftPackageReference "SwiftUI-Flow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tevelee/SwiftUI-Flow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC8348652DB7547B0079D21A /* Flow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC8348642DB7547B0079D21A /* XCRemoteSwiftPackageReference "SwiftUI-Flow" */;
+			productName = Flow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC83481D2DB72F940079D21A /* Project object */;
 }
