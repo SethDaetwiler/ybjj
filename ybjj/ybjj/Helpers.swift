@@ -11,11 +11,11 @@ import SwiftUI
 
 extension Color {
     
-    public static let backgroundPrimary: Color = Color("brandColor")
+//    public static let backgroundSecondary: Color = Color("backgroundSecondary")
+//    public static let textPrimary: Color = Color("textPrimary")
+//    public static let textPrimaryInverse: Color = Color("textPrimaryInverse")
+//    public static let textSecondary: Color = Color("textSecondary")
     
-    public static let textPrimary: Color = Color("primaryTextColor")
-    public static let textPrimaryInverse: Color = Color("primaryTextColorInverse")
-    public static let textSecondary: Color = Color("secondaryTextColor")
     
 }
 

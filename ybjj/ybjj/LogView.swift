@@ -18,7 +18,7 @@ struct LogDrillView: View {
         var id: String { rawValue }
         var icon: String {
             switch self {
-            case .technique: return "figure.martial.arts"
+            case .technique: return "figure.wrestling"
             case .concept: return "lightbulb"
             case .chain: return "link"
             case .session: return "clock"
@@ -54,7 +54,7 @@ struct LogDrillView: View {
                             }
                             .frame(maxWidth: .infinity, minHeight: 60)
                             .background(
-                                viewModel.category == category ? Color.backgroundPrimary: Color.clear
+                                viewModel.category == category ? Color.accentColor: Color.clear
                             )
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
@@ -79,7 +79,7 @@ struct LogDrillView: View {
                                 .foregroundColor(Color.gray.opacity(0.4))
                             Rectangle()
                                 .frame(width: isTitleFocused || !viewModel.title.isEmpty ? nil : 0, height: 1)
-                                .foregroundColor(.backgroundPrimary)
+                                .foregroundColor(.accent)
                                 .animation(.easeInOut(duration: 0.3), value: isTitleFocused)
                         }
                         .padding(.top, 40),
@@ -103,7 +103,7 @@ struct LogDrillView: View {
 
                 // MARK: Save Button
                 
-                WideButton(viewModel: WideButton.ViewModel(icon: "checkmark", backgroundColor: .backgroundPrimary, action: {
+                WideButton(viewModel: WideButton.ViewModel(icon: "checkmark", backgroundColor: .accent, action: {
                     dismiss()
                 }))
                 

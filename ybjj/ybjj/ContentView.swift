@@ -17,7 +17,7 @@ struct ContentView: View {
         ZStack {
             VStack {
                 if !isLogging {
-                    WideButton(viewModel: WideButton.ViewModel(icon: "plus", backgroundColor: .backgroundPrimary, action: {
+                    WideButton(viewModel: WideButton.ViewModel(icon: "plus", backgroundColor: .accent, action: {
                         withAnimation(.spring()) {
                             isLogging.toggle()
                         }
